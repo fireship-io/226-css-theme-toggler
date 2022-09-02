@@ -14,6 +14,10 @@ const isSolar = localStorage.getItem('isSolar');
 if (theme) {
   body.classList.add(theme);
   isSolar && body.classList.add('solar');
+  if (isSolar) {
+    solarButton.innerText = "normalize";
+    solarButton.style.cssText = `--bg-solar: white;`;
+  }
 } else {
     body.classList.add('light');
     localStorage.setItem('theme', 'light');
