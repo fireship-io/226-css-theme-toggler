@@ -14,6 +14,9 @@ const isSolar = localStorage.getItem('isSolar');
 if (theme) {
   body.classList.add(theme);
   isSolar && body.classList.add('solar');
+} else {
+    body.classList.add('light');
+    localStorage.setItem('theme', 'light');
 }
 
 // Button Event Handlers
