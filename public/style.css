@@ -83,7 +83,6 @@ img {
 .has-dropdown:focus-within .dropdown   {
     opacity: 1;
     z-index: 1;
-    pointer-events: auto;
 }
 
 
